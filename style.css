@@ -1,7 +1,7 @@
 td {
   border: 1px solid black;
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
 }
 td.on {
   background-color: black;
