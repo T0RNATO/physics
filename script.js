@@ -1,11 +1,10 @@
+var trcont = "<tr>" + String("<td onclick='summon(this)'></td>").repeat(25) + "</tr>";
+document.getElementById("thingo").innerHTML = trcont.repeat(25);
 var cells = document.getElementsByTagName("td");
 var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y"];
 setInterval(grav, 100);
 for (var i = 0; i < 625; i++) {
     cells[i].id = String(alphabet[Math.floor(i / 25)]) + String((i % 25) + 1);
-}
-function place() {
-  document.getElementById(document.getElementById("input").value).classList.add("on");
 }
 function grav() {
   for (var o = 624; o >= 0; --o) {
@@ -23,4 +22,7 @@ function reset() {
   for (var i = 0; i < 625; i++) {
     cells[i].classList.remove("on");
   }
+}
+function summon(me) {
+  me.classList.add("on");
 }
