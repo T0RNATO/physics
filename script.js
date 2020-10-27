@@ -1,4 +1,4 @@
-function load() {
+function hurdygurdy() {
   var cells = Array(document.getElementsByTagName("td"));
   for (var i = 0; i < 625; i++) {
     console.log(cells);
