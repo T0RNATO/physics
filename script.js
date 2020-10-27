@@ -24,3 +24,6 @@ function reset() {
     cells[i].classList.remove("on");
   }
 }
+function summon(me) {
+  me.classList.add("on");
+}
