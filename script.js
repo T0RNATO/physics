@@ -4,9 +4,6 @@ setInterval(grav, 100);
 for (var i = 0; i < 625; i++) {
     cells[i].id = String(alphabet[Math.floor(i / 25)]) + String((i % 25) + 1);
 }
-function place() {
-  document.getElementById(document.getElementById("input").value).classList.add("on");
-}
 function grav() {
   for (var o = 624; o >= 0; --o) {
     if (cells[o].classList.contains("on")) {
