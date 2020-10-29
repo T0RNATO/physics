@@ -4,7 +4,7 @@ var cells = document.getElementsByTagName("td");
 var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 setInterval(grav, 100);
 for (var i = 0; i < 1250; i++) {
-    cells[i].id = String(alphabet[Math.floor(i / 25)]) + String((i % 25) + 1);
+    cells[i].id = String(alphabet[Math.floor(i / 25)]) + String((i % 50) + 1);
 }
 function grav() {
   for (var o = 1249; o >= 0; --o) {
