@@ -1,5 +1,4 @@
 td {
-  border: 1px solid black;
   width: 25px;
   height: 25px;
 }
@@ -7,5 +6,6 @@ td.on {
   background-color: black;
 }
 table {
+  border: 1px solid black;
   border-spacing: 0px;
 }
