@@ -13,7 +13,7 @@ function loop() {
       if (cells[o].id.charAt(0) != "y") { //if the current cell is not on the bottom
         if (!document.getElementById(String((alphabet[alphabet.indexOf(cells[o].id.charAt(0)) + 1] + cells[o].id.substring(1)))).classList.contains("on")) { //if the cell below is NOT on
           document.getElementById((alphabet[alphabet.indexOf(cells[o].id.charAt(0)) + 1] + cells[o].id.substring(1))).classList.add("on"); //change the cell below to be on
-          document.getElementById((alphabet[alphabet.indexOf(cells[o].id.charAt(0)) + 1] + cells[o].id.substring(1))).style.setProperty("--hex", selected); //set the colour of the cell below
+          document.getElementById((alphabet[alphabet.indexOf(cells[o].id.charAt(0)) + 1] + cells[o].id.substring(1))).style.setProperty("--hex", getComputedStyle(cells[o]).getPropertyValue('--hex')); //set the colour of the cell below
           cells[o].classList.remove("on"); //make the current cell off
         }
       }
